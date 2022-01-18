@@ -1,0 +1,15 @@
+{
+  "name": "wordle-today-word",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:prakashdivyy/wordle-today-word.git",
+  "author": "Prakash Divy <prakashdivyy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^23.1.2"
+  },
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  }
+}
