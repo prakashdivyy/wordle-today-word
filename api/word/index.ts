@@ -2337,6 +2337,8 @@ function Ga(e) {
 }
 
 export default (req: VercelRequest, res: VercelResponse) => {
-  const today = new Date();
-  return res.json({ word: Da(today), timestamp: today });
+  const timestamp = req.query.date
+    ? new Date(req.query.date as any)
+    : new Date();
+  return res.json({ word: Da(timestamp), timestamp });
 };
